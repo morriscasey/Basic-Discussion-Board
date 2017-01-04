@@ -29,6 +29,7 @@ defmodule Discuss.Router do
 
   end
 
+
   scope "/auth", Discuss do
     pipe_through :browser
 
