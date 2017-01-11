@@ -28,3 +28,5 @@ config/dev.exs
 config/config.exs
 
 config/test.exs
+
+web/oauth/github.ex

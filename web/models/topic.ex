@@ -4,6 +4,8 @@ defmodule Discuss.Topic do
   # Maps title to topics database table in postgres
   schema "topics" do
     field :title, :string
+    belongs_to :user, Discuss.User
+    has_many :comments, Discuss.Comment
   end
 
   # params defaults nil to empty map using \\ %{}

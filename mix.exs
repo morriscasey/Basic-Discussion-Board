@@ -21,6 +21,7 @@ defmodule Discuss.Mixfile do
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
                     :phoenix_ecto, :postgrex, :logger, :ueberauth, :ueberauth_github]]
   end
+  # Removed to try another oauth tool :ueberauth, :ueberauth_github
 
   # Specifies which paths to compile per environment.
   defp elixirc_paths(:test), do: ["lib", "web", "test/support"]
@@ -38,6 +39,7 @@ defmodule Discuss.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
+    #  {:oauth2, "~> 0.8"}
      {:ueberauth, "~> 0.4"},
      {:ueberauth_github, "~> 0.4"}
    ]
